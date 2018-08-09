@@ -26,12 +26,10 @@ Below are some examples of what you can do in Brighton.</p>
 <div class="row">
     <div class="column">
 
-  <div id="pier">
 <h2>
   Brighton Pier
 </h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sTINnN5I8rs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
 <div id="attraction1"></div>
 <h2>
   Brighton Marina
@@ -59,71 +57,65 @@ The Southdowns
 <h2>
   Churchill Square
 </h2>
-<div>Lots of shopping here!</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nbwk12bKYJc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <div id="attraction6"></div>
 </div>
 </div>
 <script>
  var attraction1 = {
-    name : "The Haunt",
-    type : "Night Club/Music Venue",
-    capacity : "200",
-    price : "£",
+    type : "Sea-Side Walk",
+    location : "Sea front",
+    price : "Free",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
 document.getElementById("attraction1").innerHTML = attraction1.getDetails();
 var attraction2 = {
-    name : "The Haunt",
-    type : "Night Club/Music Venue",
-    capacity : "200",
-    price : "£",
+    type : "Shopping/Restaurants/boats",
+    location : "Kempton",
+    price : "££",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
-document.getElementById("attraction3").innerHTML = attraction1.getDetails();
-var attraction1 = {
-    name : "The Haunt",
-    type : "Night Club/Music Venue",
-    capacity : "200",
-    price : "£",
+document.getElementById("attraction2").innerHTML = attraction2.getDetails();
+var attraction3 = {
+    type : "Look out",
+    location : "Hove lawns",
+    price : "££",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
-document.getElementById("attraction3").innerHTML = attraction1.getDetails();
+document.getElementById("attraction3").innerHTML = attraction3.getDetails();
 var attraction4 = {
-    name : "The Haunt",
     type : "Night Club/Music Venue",
-    capacity : "200",
+    location : "200",
     price : "£",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
-document.getElementById("attraction4").innerHTML = attraction1.getDetails();
+document.getElementById("attraction4").innerHTML = attraction4.getDetails();
 var attraction5 = {
-    name : "The Haunt",
-    type : "Night Club/Music Venue",
-    capacity : "200",
-    price : "£",
+    type : "Shopping/Bars/Pubs",
+    location : "City Center",
+    price : "£/££/£££",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
-document.getElementById("attraction6").innerHTML = attraction1.getDetails();
-var attraction1 = {
-    name : "The Haunt",
-    type : "Night Club/Music Venue",
-    capacity : "200",
-    price : "£",
+document.getElementById("attraction5").innerHTML = attraction5.getDetails();
+var attraction6 = {
+    type : "Shopping",
+    location : "Churchill Square, City Center",
+    price : "£/££/£££",
     getDetails: function() {
-        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+        return "----------------------------------------------------------<br>"+ this.type + "<br>"+ this.location + "<br>" + this.price;
     }
 };
-document.getElementById("attraction6").innerHTML = attraction1.getDetails();
+document.getElementById("attraction6").innerHTML = attraction6.getDetails();
  </script>
 </body>
 </html>

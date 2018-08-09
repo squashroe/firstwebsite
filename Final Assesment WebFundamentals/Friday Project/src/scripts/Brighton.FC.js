@@ -1,3 +1,5 @@
+
+
 function areYouReady() {
     confirm("Are you ready for Brighton to win the next season?");
 }
