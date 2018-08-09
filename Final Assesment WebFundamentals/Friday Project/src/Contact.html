@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="css/Contact.css">
+<script src="scripts/Contact.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div style="text-align:left">
+  <h1>
+    Brighton & Hove
+  </h1>
+</div>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="TouristAttractions.html">Tourist Attractions</a></li>
+  <li><a href="Nightlife.html">Nightlife</a></li>
+  <li><a href="BrightonFC.html">Brighton F.C.</a></li>
+  <li><a class="active" href="Contact.html">Contact</a></li>
+</ul>
+<script>$(document).ready(function() {
+  alert("We would be happy to hear your feedback!");
+});
+</script>
+
+<div class="column"align='left'>
+<h2>Request Brochures</h2>
+
+<FORM NAME="BrochureChoice">
+  <input type="checkbox" name="Brochure" value="Map" > Map of the City<br />
+  <input type="checkbox" name="Brochure" value="Walks" > South Downs Walks<br />
+  <input type="checkbox" name="Brochure" value="Life" > Local Pubs<br /> 
+  <input type="checkbox" name="Brochure" value="Marina" > The Marina<br />
+  <input type="checkbox" name="Brochure" value="Beach" > Beach Walks<br />
+  <input type="checkbox" name="Brochure" value="Hove" > Hove and Beyond <br />
+  <input type="checkbox" name="Brochure" value="Pier" > Brighton Pier<br />
+  <input type="checkbox" name="Brochure" value="Cathedral" > St Peters Cathedral<br />
+  <input type="checkbox" name="Brochure" value="RaceCourse" > RaceCourse<br />
+  <input type="button" name="requestBrochureButton" value="Request" onClick="requestBrochures()"><br />
+  </form>
+<div id="shoppingcart"></div>
+<hr>
+<br>
+<br>
+<br>
+<p>If you wish to join our mailing list, please fill out the below form:</p><br>
+<input type="text" id="fullname" value="Name"><br>
+<input type="text" id="email" value="Email"><br>
+<input type="button" id="joinUs" value="Join Us" onClick="validateForm()">
+<div id="infoDiv"></div>
+<br>
+<br>
+<br>
+<br>
+<p>If you want to let us know if there's anything we can improve, let us know!</p>
+<a href="mailto:example@email.com">Email us</a>
+</div>
+
+<div>
+    <h2>Directions:</h2>  
+  <h3>Brighton is located in East Sussex</h3>
+ <!-- <img alt="Brighton map" src='../assets/brighton-map.PNG' width=600 float:'left'> -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40314.60204858713!2d-0.1412090435611195!3d50.83741270972123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton!5e0!3m2!1sen!2suk!4v1533558685920" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <p style="text-align:right">Is accesable by train, coach, bus taxi, legs, bike or car</p>
+</div>
+
+</body>
+</html>

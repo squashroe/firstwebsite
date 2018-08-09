@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Nightlife</title>
+<script type="text/javascript" src="/Friday Project/src/scripts/bar.js"></script>
+<link rel="stylesheet" href="css/Nightlife.css">
+</head>
+<body>
+<div style="text-align:left">
+  <h1>
+    Brighton & Hove
+  </h1>
+</div>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="TouristAttractions.html">Tourist Attractions</a></li>
+  <li><a class="active" href="Nightlife.html">Nightlife</a></li>
+  <li><a href="BrightonFC.html">Brighton F.C.</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+
+<div class="column1" align="left">
+<div id="bar_1"></div>
+<img src="../assets/The Haunt.jpg" width=300>
+<div id="bar_2"></div>
+<img src="../assets/concorde-2.jpg" width=300>
+<div id="bar_3"></div>
+<img src="../assets/pryzm.jpg" width=300>
+</div>
+
+<div class="column2" align="right">
+<div id="bar_4"></div>
+<img src="../assets/green door store.jpg" width=300>
+<div id="bar_5"></div>
+<img src="../assets/c side quest.jpg" width=300>
+<div id="bar_6"></div>
+<img src="../assets/good companions.jpg" width=300>
+
+<p>Here is a link to trpiadvisor for more information:</p>
+<a href="https://www.tripadvisor.co.uk/Attractions-g186273-Activities-c20-Brighton_East_Sussex_England.html" target="_blank">Trip Advisor</a>
+
+</div>
+<script>
+    var attraction1 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_1").innerHTML = attraction1.getDetails();
+
+var attraction2 = {
+    name : "Concorde 2",
+    type : "Night Club",
+    capacity : "300",
+    price : "££",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_2").innerHTML = attraction2.getDetails();
+
+var attraction3 = {
+    name : "PRYZM",
+    type : "Night Club",
+    capacity : "400",
+    price : "££",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_3").innerHTML = attraction3.getDetails();
+
+var attraction4 = {
+    name : "The Green Door Store",
+    type : "Night Club/Music Venue",
+    capacity : "150",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_4").innerHTML = attraction4.getDetails();
+
+var attraction5 = {
+    name : "C:\ Side Quest",
+    type : "Gaming Bar",
+    capacity : "100",
+    price : "££",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_5").innerHTML = attraction5.getDetails();
+
+var attraction6 = {
+    name : "The Good Companions",
+    type : "Pub/Beer Garden",
+    capacity : "150",
+    price : "£££",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("bar_6").innerHTML = attraction6.getDetails();
+
+    </script>
+
+
+</body>
+
+</html>

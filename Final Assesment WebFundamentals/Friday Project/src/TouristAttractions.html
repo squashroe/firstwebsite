@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TouristAttractions</title>
+<link rel="stylesheet" href="css/TouristAttractions.css">
+<script type="text/javascript" src="/Friday Project/src/scripts/attraction.js"></script>
+</head>
+<body>
+<div style="text-align:left">
+  <h1>
+    Brighton & Hove
+  </h1>
+</div>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a class="active" href="TouristAttractions.html">Tourist Attractions</a></li>
+  <li><a href="Nightlife.html">Nightlife</a></li>
+  <li><a href="BrightonFC.html">Brighton F.C.</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+</ul>
+
+<p>There are many places to visit in Brighton as it is primarily tourist town. <br>
+Below are some examples of what you can do in Brighton.</p>
+
+<div class="row">
+    <div class="column">
+
+  <div id="pier">
+<h2>
+  Brighton Pier
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sTINnN5I8rs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="attraction1"></div>
+<h2>
+  Brighton Marina
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CSpOSEcKShQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="attraction2"></div>
+<h2>
+  British Airways i360
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rlJovEdWBCI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="attraction3"></div>
+</div>
+
+<div class="column">
+<h2>
+  The Lanes
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1EFAUJMOF48" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="attraction4"></div>
+<h2> 
+The Southdowns
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HDeH6vs4kEA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div id="attraction5"></div>
+<h2>
+  Churchill Square
+</h2>
+<div>Lots of shopping here!</div>
+<div id="attraction6"></div>
+</div>
+</div>
+<script>
+ var attraction1 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction1").innerHTML = attraction1.getDetails();
+var attraction2 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction3").innerHTML = attraction1.getDetails();
+var attraction1 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction3").innerHTML = attraction1.getDetails();
+var attraction4 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction4").innerHTML = attraction1.getDetails();
+var attraction5 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction6").innerHTML = attraction1.getDetails();
+var attraction1 = {
+    name : "The Haunt",
+    type : "Night Club/Music Venue",
+    capacity : "200",
+    price : "£",
+    getDetails: function() {
+        return "----------------------------------------------------------<br>" + this.name + "<br>" + this.type + "<br>"+ this.capacity + "<br>" + this.price;
+    }
+};
+document.getElementById("attraction6").innerHTML = attraction1.getDetails();
+ </script>
+</body>
+</html>

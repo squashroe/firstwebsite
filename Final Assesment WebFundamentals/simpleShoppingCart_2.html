@@ -1,0 +1,103 @@
+<html>
+	<HEAD>
+		<TITLE>  JavaScript to Applet Communication 
+		</TITLE >
+		<SCRIPT LANGUAGE="JavaScript">
+			brochures = new Array;
+			count = 0;  
+			function confirmIt()
+			{
+			   alert("The brochures will be sent to you at the earliest opportunity");
+			}
+
+			function selectedShoppingCart()
+			{
+			  selectedBrochure();
+
+			  brochureString = "<p>Your shopping cart Contains</p><table>" ; 
+			 
+			 for (i = 0; i < count; i++)
+			  {
+				 brochureString += "<tr><td>" + brochures[i] + "</td></tr>";
+			  } 
+			  brochureString += '</table>';
+
+			  brochureString += '<FORM NAME="confirm"><input type="button" name="confirm" value="Confirm Requirement" onClick="confirmIt()"></form>';
+			
+			 var shoppingCart = document.getElementById("top");
+			  shoppingCart.innerHTML = brochureString;
+			
+			}
+
+			function selectedBrochure() 
+			{
+			  if(document.BrochureChoice.Brochure[0].checked == true)
+			  {	
+				 addBrochureToCart("Map of the city");
+			  }	
+			  if(document.BrochureChoice.Brochure[1].checked == true)
+			  {
+				 addBrochureToCart("City Walks"); 
+			  }
+			  if(document.BrochureChoice.Brochure[2].checked == true)
+			  {
+				 addBrochureToCart("Night Life");
+			  }
+			  if(document.BrochureChoice.Brochure[3].checked == true)
+			  {
+				 addBrochureToCart("Liver Building");
+			  }
+			  if(document.BrochureChoice.Brochure[4].checked == true)
+			  {
+				 addBrochureToCart("Lime Street Station");
+			  }
+			  if(document.BrochureChoice.Brochure[5].checked == true)
+			  {
+				 addBrochureToCart("Canary Wharf");
+			  }
+			  if(document.BrochureChoice.Brochure[6].checked == true)
+			  {
+				addBrochureToCart("Houses of Parliament");
+			  }
+			  if(document.BrochureChoice.Brochure[7].checked == true)
+			  {
+				addBrochureToCart("St Pauls Cathedral");
+			  }
+			  if(document.BrochureChoice.Brochure[8].checked == true)
+			  {
+				addBrochureToCart("London Dungeons");
+			  }
+			}
+
+			function addBrochureToCart(inputStr)
+			{
+			   brochures[count] = inputStr; 
+			   count++;    
+			} 
+		</SCRIPT>
+	</HEAD>
+	<BODY >
+		<div id="top">
+	
+
+		<b>Select the Brochures you are interested in:</b>
+		<br>
+		<br>
+		<div>
+			<FORM NAME="BrochureChoice">
+			<input type="checkbox" name="Brochure" value="Map" > Map of the City<br />
+			<input type="checkbox" name="Brochure" value="Walks" > City Walks<br />
+			<input type="checkbox" name="Brochure" value="Life" > Night Life<br /> 
+			<input type="checkbox" name="Brochure" value="Building" > Liver Building<br />
+			<input type="checkbox" name="Brochure" value="LimeStreet" > Lime Street Station<br />
+			<input type="checkbox" name="Brochure" value="Wharf" > Canary Wharf<br />
+			<input type="checkbox" name="Brochure" value="Parliament" > Houses of Parliament<br />
+			<input type="checkbox" name="Brochure" value="Cathedral" > St Pauls Cathedral<br />
+			<input type="checkbox" name="Brochure" value="Dungeons" > London Dungeons<br />
+			<input type="button" name="shoppingCart" value="Shopping Cart" onClick="selectedShoppingCart()"><br />
+			</form>
+		
+		<br><br><hr><br><br>
+		</div>
+	</BODY >
+</html>
